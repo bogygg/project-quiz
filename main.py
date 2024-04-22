@@ -11,4 +11,8 @@ def result():
     user_answer = request.args.get("answer")
     return render_template("result.html", user_answer= user_answer)
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 app.run(debug=True)
